@@ -9,13 +9,23 @@
 </head>
 <body>
     <form action="#">
-        <label for="search-city">Search City</label>
-        <input type="search" id="search-city">
-        <button class="search-city-btn">Search</button>
+        <div>
+            <input type="search" id="search-city">
+            <button class="search-city-btn">Search City</button>
+        </div>
     </form>
-    <div class="temp">Temp:</div>
-    <div class="weather">Weather:</div>
-    <div class="feels-like">Feels Like:</div>
-    <div class="wind">Wind:</div>
+    <div class="card">
+        <div class="city">Tbilisi</div>
+        <div class="temp"></div>
+        <div class="weather">:</div>
+        <div class="feels-like">Feels Like:</div>
+        <div class="wind">Wind:</div>
+        <input type="checkbox" id="switch"
+                    class="checkbox" />
+        <label for="switch" class="toggle">
+             <p class="celsius">°C</p>
+             <p>°F</p>
+        </label>
+    </div>
 </body>
 </html>

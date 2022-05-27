@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-top: 8vh;
+    margin-bottom: 25vh;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#search-city {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+#search-city:focus {
+    outline: none;
+}
+
+.search-city-btn {
+    width: 50px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.507);
+    font-weight: bold;
+}
+
+.search-city-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+
+.celsius {
+    margin-left: 5px;
+}
+
+/* toggle in label designing */
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width : 80px;
+    height : 32px;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 30px;
+    border: 2px solid rgb(99, 127, 128);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+       
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(99, 127, 128);
+    top: 1px;
+    left: 1px;
+    transition:  all 0.5s;
+}
+       
+/* Toggle text */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+       
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+    left : 49px;
+}
+       
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: rgba(0, 128, 0, 0);
+}
+       
+/* Checkbox vanished */
+.checkbox {
+    display : none;
+}
