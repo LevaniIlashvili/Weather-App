@@ -23,7 +23,7 @@ const checkbox = document.getElementById("switch");
 
 async function getGeoCode(city) {
   try {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=8e5a2bde277a03dd82ea3da92c83919c`, { mode: "cors" });
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=8e5a2bde277a03dd82ea3da92c83919c`, { mode: "cors" });
     const geoCode = await response.json();
     const { lat } = geoCode[0];
     const { lon } = geoCode[0];
